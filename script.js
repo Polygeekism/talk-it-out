@@ -1,5 +1,6 @@
 /*
 1. Start with the number 42 and set that equal to the variable `majorKey`
+var majorKey = 42;
 
 2. Create conditional logic to check if `majorKey` is greater than or equal to 53
 2-1. If true, add 42 to `majorKey`
@@ -35,3 +36,69 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 
 15. Your answer should be a string value that equals 7. Is that what you got?
 */
+//1
+var majorKey = 42;
+//2
+if(majorKey >= 53){
+    majorKey += 42; 
+}
+else {
+    majorKey -= 13;
+}
+//3
+majorKey += '11';
+console.log(majorKey);
+//4
+var keyChars = [];
+for(i=0; i<majorKey.length; i++){
+    keyChars.push(majorKey.charAt(i));
+}
+console.log(keyChars);
+//5
+keyChars.shift();
+keyChars.pop();
+//6
+var stitch = '';
+for(i=keyChars.length-1; i >=0; i--){
+    stitch += keyChars[i];
+
+}
+//7
+majorKey = parseInt(majorKey);
+stitch = parseInt(stitch);
+//8
+majorKey = majorKey + stitch;
+//9
+if (majorKey < 60){
+    majorKey = 14;
+} 
+else if (majorKey = 2930){
+    majorKey = 27;
+}
+else {
+    majorKey = 2;
+}
+//10
+i = 10;
+while (i > 0) {
+    majorKey += 1;
+    i--;
+}
+console.log(majorKey);
+//11
+function dropper(val){
+    val = val.toString();
+    if (val.length > 1){
+        val = val.slice(1, val.length);
+        console.log(val);
+        majorKey = val;
+    }
+    else {
+        majorKey = val;
+    }
+}
+//12
+dropper(majorKey);
+//13
+console.log(majorKey);
+
