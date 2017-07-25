@@ -102,3 +102,4 @@ dropper(majorKey);
 //13
 console.log(majorKey);
 
+document.getElementById("demo").innerHTML = majorKey;
